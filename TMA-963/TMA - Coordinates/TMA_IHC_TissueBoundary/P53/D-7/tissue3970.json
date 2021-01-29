@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [26379.08, 11552.24],
+        [26376.38, 11554.37],
+        [26377.29, 11558.86],
+        [26381.64, 11560.01],
+        [26383.09, 11556.17],
+        [26381.56, 11552.46],
+        [26379.08, 11552.24]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.716897010803223
+      },
+      {
+        "name": "Length µm",
+        "value": 10.500123023986816
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8795565366744995
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.726914644241333
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.8229615688323975
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.19295552372932434
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.19709832966327667
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.13555683195590973
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.23012173175811768
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.024760952219367027
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.045758239924907684
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.048279888927936554
+      },
+      {
+        "name": "DAB: Min",
+        "value": 0.004870354663580656
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.0691223293542862
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.016113994643092155
+      }
+    ]
+  }
+}

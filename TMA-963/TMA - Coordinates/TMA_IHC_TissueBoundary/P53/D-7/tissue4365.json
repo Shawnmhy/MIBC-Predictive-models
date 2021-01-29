@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [26385.78, 11675.27],
+        [26381.73, 11675.67],
+        [26382.78, 11678.97],
+        [26385.78, 11681.56],
+        [26389.55, 11680.9],
+        [26389.06, 11678.37],
+        [26385.78, 11675.27]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 6.509359359741211
+      },
+      {
+        "name": "Length µm",
+        "value": 10.177162170410156
+      },
+      {
+        "name": "Circularity",
+        "value": 0.7897592782974243
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.271846294403076
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.1564762592315674
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.24195195734500885
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.24388588964939117
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.12145058810710907
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.331375390291214
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.04239451512694359
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.0014909668825566769
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.0010605513816699386
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.016424397006630898
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.021874699741601944
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.010232310742139816
+      }
+    ]
+  }
+}

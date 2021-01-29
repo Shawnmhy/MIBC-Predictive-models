@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [26597.91, 12342.19],
+        [26593.04, 12342.64],
+        [26591.49, 12344.98],
+        [26594.75, 12348.34],
+        [26598.18, 12348.68],
+        [26600.03, 12345.95],
+        [26597.91, 12342.19]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.860868453979492
+      },
+      {
+        "name": "Length µm",
+        "value": 10.641590118408203
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8723029494285583
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.9018898010253906
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.919809341430664
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.3162279427051544
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.31012141704559326
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.1562516987323761
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.4994194209575653
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.10097359865903854
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.00945883896201849
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.008382558822631836
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.044183701276779175
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.02339075691998005
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.01422968041151762
+      }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [25987.66, 12813.39],
+        [25984.1, 12813.95],
+        [25980.73, 12816.33],
+        [25980.59, 12818.45],
+        [25982.93, 12820.47],
+        [25987.95, 12819.71],
+        [25991.02, 12816.33],
+        [25990.49, 12814.35],
+        [25987.66, 12813.39]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 10.760075569152832
+      },
+      {
+        "name": "Length µm",
+        "value": 12.5429105758667
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8594656586647034
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.874351501464844
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.854592800140381
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.25068914890289307
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.25974369049072266
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.15301267802715302
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.31255337595939636
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.040745995938777924
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.02371205762028694
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.020045462995767593
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.01132962666451931
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.06832986325025558
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.017541363835334778
+      }
+    ]
+  }
+}

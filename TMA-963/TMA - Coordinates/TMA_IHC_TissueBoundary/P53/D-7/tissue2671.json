@@ -1,0 +1,97 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28152.57, 11095.12],
+        [28149.27, 11098.23],
+        [28150.86, 11103.16],
+        [28154.81, 11104.88],
+        [28157.34, 11104.31],
+        [28159.65, 11100.52],
+        [28159.33, 11097.5],
+        [28156.85, 11095.59],
+        [28152.57, 11095.12]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 15.239715576171875
+      },
+      {
+        "name": "Length µm",
+        "value": 14.314765930175781
+      },
+      {
+        "name": "Circularity",
+        "value": 0.9345837235450745
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.896102428436279
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 4.236820220947266
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.0014649679651483893
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.0
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.0
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.004737907089293003
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.0017799079651013017
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -6.89862878061831E-4
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.0
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.0022311110515147448
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.0
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 8.381701190955937E-4
+      }
+    ]
+  }
+}

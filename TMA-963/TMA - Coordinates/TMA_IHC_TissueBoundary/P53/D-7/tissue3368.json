@@ -1,0 +1,96 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28091.63, 11613.02],
+        [28086.52, 11613.23],
+        [28083.44, 11614.38],
+        [28081.52, 11618.51],
+        [28084.77, 11620.66],
+        [28088.44, 11619.32],
+        [28091.8, 11616.44],
+        [28091.63, 11613.02]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 11.014427185058594
+      },
+      {
+        "name": "Length µm",
+        "value": 12.99096965789795
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8201411962509155
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 5.223893642425537
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.895174026489258
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.337691992521286
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.33958345651626587
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.18511244654655457
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.4344959855079651
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.05999692529439926
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.05154172331094742
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.05042319372296333
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.03681762516498566
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.12716400623321533
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.04226505383849144
+      }
+    ]
+  }
+}

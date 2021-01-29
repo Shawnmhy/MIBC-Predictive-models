@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28007.69, 11548.87],
+        [28003.88, 11549.63],
+        [28002.69, 11551.15],
+        [28004.13, 11554.21],
+        [28008.43, 11554.54],
+        [28010.12, 11551.15],
+        [28007.69, 11548.87]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 6.152000427246094
+      },
+      {
+        "name": "Length µm",
+        "value": 9.365955352783203
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8812963962554932
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.3824245929718018
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.540567398071289
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.3462294936180115
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.32251501083374023
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.16500680148601532
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.6038534045219421
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.12291266769170761
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.006056221202015877
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.0015288919676095247
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.02765834704041481
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.07074879109859467
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.02050894871354103
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [25712.44, 11462.12],
+        [25706.59, 11464.11],
+        [25709.11, 11466.6],
+        [25713.91, 11466.69],
+        [25719.25, 11468.39],
+        [25721.75, 11467.8],
+        [25720.7, 11464.11],
+        [25712.44, 11462.12]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 11.479315757751465
+      },
+      {
+        "name": "Length µm",
+        "value": 15.903410911560059
+      },
+      {
+        "name": "Circularity",
+        "value": 0.5703551173210144
+      },
+      {
+        "name": "Solidity",
+        "value": 0.9355301260948181
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 7.08376407623291
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.2660973072052
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.2501072287559509
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.2602123022079468
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.11776851862668991
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.3407611846923828
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.04472437873482704
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.022657442837953568
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.023953039199113846
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.016560323536396027
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.05063674971461296
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.015021886676549911
+      }
+    ]
+  }
+}

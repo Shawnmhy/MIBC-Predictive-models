@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27042.15, 11533.44],
+        [27039.95, 11537.68],
+        [27037.03, 11536.45],
+        [27039.66, 11540.71],
+        [27043.66, 11540.8],
+        [27044.81, 11537.76],
+        [27042.15, 11533.44]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 5.87561559677124
+      },
+      {
+        "name": "Length µm",
+        "value": 11.47673225402832
+      },
+      {
+        "name": "Circularity",
+        "value": 0.5605660080909729
+      },
+      {
+        "name": "Solidity",
+        "value": 0.7906950116157532
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.8046669960021973
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.696211099624634
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.23813605308532715
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.24673254787921906
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.13628339767456055
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.3239361345767975
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.0530521385371685
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.010168093256652355
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.009721819311380386
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.023913130164146423
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.03380114585161209
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.012905379757285118
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27262.48, 11786.76],
+        [27255.44, 11786.87],
+        [27254.59, 11790.53],
+        [27257.33, 11792.93],
+        [27263.12, 11793.82],
+        [27265.22, 11790.53],
+        [27262.48, 11786.76]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 11.562677383422852
+      },
+      {
+        "name": "Length µm",
+        "value": 13.104496002197266
+      },
+      {
+        "name": "Circularity",
+        "value": 0.846111536026001
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.867321968078613
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 3.1243371963500977
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.3669087886810303
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.3769913911819458
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.20215220749378204
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.45991024374961853
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.058151207864284515
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.0040100025944411755
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.0044768196530640125
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.04239775612950325
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.02674025483429432
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.013319415971636772
+      }
+    ]
+  }
+}

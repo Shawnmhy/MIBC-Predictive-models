@@ -1,0 +1,96 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28157.97, 11073.36],
+        [28150.91, 11074.49],
+        [28150.66, 11077.09],
+        [28153.09, 11079.65],
+        [28156.53, 11079.67],
+        [28158.8, 11078.5],
+        [28156.08, 11075.41],
+        [28157.97, 11073.36]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.091248512268066
+      },
+      {
+        "name": "Length µm",
+        "value": 11.890692710876465
+      },
+      {
+        "name": "Circularity",
+        "value": 0.6302578449249268
+      },
+      {
+        "name": "Solidity",
+        "value": 0.8577012419700623
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.0182414054870605
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.724848985671997
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.0024011561181396246
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.002363781211897731
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.0
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.005361417308449745
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.0015503413742408156
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -9.496299899183214E-4
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.0011131197679787874
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.0017962881829589605
+      },
+      {
+        "name": "DAB: Max",
+        "value": 2.744307566899806E-4
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 5.944049917161465E-4
+      }
+    ]
+  }
+}

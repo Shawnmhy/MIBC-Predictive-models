@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27545.31, 12234.54],
+        [27542.62, 12237.14],
+        [27543.83, 12240.13],
+        [27547.83, 12240.15],
+        [27548.48, 12237.14],
+        [27548.3, 12235.48],
+        [27545.31, 12234.54]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 5.113738059997559
+      },
+      {
+        "name": "Length µm",
+        "value": 8.559629440307617
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8770784735679626
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 2.9479548931121826
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.541489362716675
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.26327788829803467
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.2668013870716095
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.14971290528774261
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.3496509790420532
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.05775240808725357
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -7.920544594526291E-4
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.002967480570077896
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.026805488392710686
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.027092652395367622
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.01027184259146452
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27303.08, 11825.92],
+        [27299.17, 11826.06],
+        [27297.66, 11828.41],
+        [27298.19, 11835.05],
+        [27301.09, 11835.51],
+        [27303.84, 11830.71],
+        [27303.08, 11825.92]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 9.464533805847168
+      },
+      {
+        "name": "Length µm",
+        "value": 12.115431785583496
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8102728724479675
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.702415466308594
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.713853597640991
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.341092050075531
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.3541906476020813
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.11774573475122452
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.4982626438140869
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.0960308313369751
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.0047646453604102135
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.007432837504893541
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.03820013999938965
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.05042319372296333
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.01708943396806717
+      }
+    ]
+  }
+}

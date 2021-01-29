@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28081.14, 11549.64],
+        [28075.31, 11549.81],
+        [28074.97, 11552.83],
+        [28077.84, 11555.8],
+        [28081.98, 11556.05],
+        [28083.32, 11552.83],
+        [28081.14, 11549.64]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 8.519266128540039
+      },
+      {
+        "name": "Length µm",
+        "value": 11.124114990234375
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8651294708251953
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.149259567260742
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.8819780349731445
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.2681584656238556
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.26416200399398804
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.14971290528774261
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.3860614001750946
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.05710426717996597
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.013684634119272232
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.005619288422167301
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.015597277320921421
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.06875398755073547
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.020833555608987808
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27021.75, 12832.88],
+        [27020.09, 12834.34],
+        [27021.72, 12838.65],
+        [27025.12, 12839.27],
+        [27026.43, 12836.42],
+        [27024.59, 12833.1],
+        [27021.75, 12832.88]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 5.787834167480469
+      },
+      {
+        "name": "Length µm",
+        "value": 9.104552268981934
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8774223923683167
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.2883801460266113
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.3577194213867188
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.32955238223075867
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.30702781677246094
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.13568466901779175
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.5320900082588196
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.10063355416059494
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.0045649204403162
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.004425260704010725
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.040034208446741104
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.016520073637366295
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.012280359864234924
+      }
+    ]
+  }
+}

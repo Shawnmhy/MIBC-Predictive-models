@@ -1,0 +1,2122 @@
+{
+  "object_classifier_type": "OpenCVMLClassifier",
+  "featureExtractor": {
+    "feature_extractor_type": "DefaultFeatureExtractor",
+    "measurements": [
+      "Hematoxylin: Mean",
+      "Hematoxylin: Median",
+      "Hematoxylin: Min",
+      "Hematoxylin: Max",
+      "Hematoxylin: Std.Dev.",
+      "DAB: Mean",
+      "DAB: Median",
+      "DAB: Min",
+      "DAB: Max",
+      "DAB: Std.Dev."
+    ]
+  },
+  "classifier": {
+    "class": "RTrees",
+    "statmodel": {
+      "format": 3,
+      "is_classifier": 1,
+      "var_all": 11,
+      "var_count": 10,
+      "ord_var_count": 10,
+      "cat_var_count": 1,
+      "training_params": {
+        "use_surrogates": 0,
+        "max_categories": 10,
+        "regression_accuracy": 0.0,
+        "max_depth": 25,
+        "min_sample_count": 10,
+        "cross_validation_folds": 0,
+        "nactive_vars": 0
+      },
+      "global_var_idx": 1,
+      "var_idx": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "var_type": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "cat_ofs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "class_labels": [
+        0,
+        1,
+        2
+      ],
+      "missing_subst": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "oob_error": 0.0,
+      "ntrees": 50,
+      "trees": [
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 2.6666666030883789e+01,
+                  "le": 4.0750324726104736e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 0,
+                  "quality": 8.5714282989501953e+00,
+                  "le": 8.7029963731765747e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.7799999237060547e+01,
+                  "le": 5.7414941489696503e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 2.5846153259277344e+01,
+                  "le": 1.7061501741409302e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 13.0,
+                  "le": 2.7426447719335556e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.6166666030883789e+01,
+                  "le": 4.3091568350791931e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 1,
+                  "quality": 12.0,
+                  "le": 9.1174960136413574e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 3.0399999618530273e+01,
+                  "le": 5.4257977008819580e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 8,
+                  "quality": 2.5538461685180664e+01,
+                  "le": 6.8067967891693115e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 3,
+                  "quality": 1.1250000000000000e+01,
+                  "le": 1.3972380757331848e-01
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.4500000000000000e+01,
+                  "le": 2.2346967458724976e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 1,
+                  "quality": 1.4285714149475098e+01,
+                  "le": 9.1174960136413574e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.6666666030883789e+01,
+                  "le": 4.7104066610336304e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 8.8000001907348633e+00,
+                  "le": 1.4290826395153999e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.7200000762939453e+01,
+                  "le": 2.2346967458724976e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 2.5382856369018555e+01,
+                  "le": 4.0870908647775650e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 24.0,
+                  "le": 2.2751957178115845e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.5538461685180664e+01,
+                  "le": 6.8430759012699127e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 1,
+                  "quality": 9.8888893127441406e+00,
+                  "le": 1.1341057717800140e-01
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 8,
+                  "quality": 2.6166666030883789e+01,
+                  "le": 7.3840355873107910e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 0,
+                  "quality": 1.0250000000000000e+01,
+                  "le": 8.3212852478027344e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 32.0,
+                  "le": 1.2585069984197617e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 2.8615385055541992e+01,
+                  "le": 2.2109986841678619e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 13.0,
+                  "le": 1.2539874762296677e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 2.7799999237060547e+01,
+                  "le": 1.5702303498983383e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 2.2526315689086914e+01,
+                  "le": 5.0181567668914795e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 1.7200000762939453e+01,
+                  "le": 2.7426447719335556e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 2.5538461685180664e+01,
+                  "le": 7.2223924100399017e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 1.1285714149475098e+01,
+                  "le": 2.4358466267585754e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 2.5538461685180664e+01,
+                  "le": 2.2109986841678619e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 1.1285714149475098e+01,
+                  "le": 2.4347547441720963e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 2.6545454025268555e+01,
+                  "le": 2.2372925281524658e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 9.3333330154418945e+00,
+                  "le": 2.0695380866527557e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 2.8250000000000000e+01,
+                  "le": 2.2372925281524658e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.6909090042114258e+01,
+                  "le": 1.4533276855945587e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 1,
+                  "quality": 9.2500000000000000e+00,
+                  "le": 8.5516527295112610e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 28.0,
+                  "le": 2.2346967458724976e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.6909090042114258e+01,
+                  "le": 6.8430759012699127e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 9.3999996185302734e+00,
+                  "le": 3.1693138182163239e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.5538461685180664e+01,
+                  "le": 5.7414941489696503e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 2,
+                  "quality": 13.0,
+                  "le": 1.1605060659348965e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 3,
+                  "quality": 1.9714284896850586e+01,
+                  "le": 1.5923225879669189e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 25.0,
+                  "le": 5.1326457411050797e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 2,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.6666666030883789e+01,
+                  "le": 2.2343133389949799e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 8.8000001907348633e+00,
+                  "le": 1.0593811050057411e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 25.0,
+                  "le": 5.4517358541488647e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 1.2250000000000000e+01,
+                  "le": 2.7426447719335556e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 27.0,
+                  "le": 2.2346967458724976e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.5846153259277344e+01,
+                  "le": 2.2346967458724976e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 2,
+                  "quality": 13.0,
+                  "le": 7.0997536182403564e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 8,
+                  "quality": 2.5571428298950195e+01,
+                  "le": 4.2196166515350342e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 1.0727272987365723e+01,
+                  "le": 1.0013320297002792e-01
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 9.1999998092651367e+00,
+                  "le": 1.4290826395153999e-02
+                }
+              ]
+            },
+            {
+              "depth": 3,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 3,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 26.0,
+                  "le": 4.3111994862556458e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 1,
+                  "quality": 1.0285714149475098e+01,
+                  "le": 2.9467970132827759e-01
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 2.5142856597900391e+01,
+                  "le": 7.7990770339965820e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 2,
+                  "quality": 14.0,
+                  "le": 6.6109545528888702e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 2,
+                  "quality": 2.7636363983154297e+01,
+                  "le": 4.8766564577817917e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 11.0,
+                  "le": 6.0335773229598999e-01
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 2,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.4500000000000000e+01,
+                  "le": 2.2346967458724976e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 0,
+                  "quality": 1.2666666984558105e+01,
+                  "le": 8.7029963731765747e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 2,
+                  "quality": 12.0,
+                  "le": 7.7537111937999725e-03
+                }
+              ]
+            },
+            {
+              "depth": 3,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 3,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.7636363983154297e+01,
+                  "le": 5.4517358541488647e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 9.2222223281860352e+00,
+                  "le": -1.6341157257556915e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 2.7799999237060547e+01,
+                  "le": 2.2059987485408783e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.4533332824707031e+01,
+                  "le": 1.4134342968463898e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 15.0,
+                  "le": 2.7426447719335556e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.6545454025268555e+01,
+                  "le": 6.8430759012699127e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 8.0,
+                  "le": 1.2952513992786407e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 2.2338163375854492e+01,
+                  "le": 4.1872285306453705e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 23.0,
+                  "le": 4.8964738845825195e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.7555555343627930e+01,
+                  "le": 2.2346967458724976e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 2.8799999237060547e+01,
+                  "le": 4.2656284570693970e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 8,
+                  "quality": 2.6666666030883789e+01,
+                  "le": 8.8509404659271240e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 3,
+                  "quality": 12.0,
+                  "le": 1.8505819141864777e-01
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.4799999237060547e+01,
+                  "le": 8.3815179765224457e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 2,
+                  "quality": 1.1727272987365723e+01,
+                  "le": 8.0371439456939697e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 8.6000003814697266e+00,
+                  "le": 1.0649364441633224e-02
+                }
+              ]
+            },
+            {
+              "depth": 3,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 3,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.5846153259277344e+01,
+                  "le": 2.2346967458724976e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 3,
+                  "quality": 1.1222222328186035e+01,
+                  "le": 5.2603459358215332e-01
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 6,
+                  "quality": 2.8666666030883789e+01,
+                  "le": 4.3424934148788452e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 2,
+                  "quality": 12.0,
+                  "le": 6.0656636953353882e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 5,
+                  "quality": 2.8571428298950195e+01,
+                  "le": 4.5734447240829468e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 7,
+                  "quality": 2.3764705657958984e+01,
+                  "le": 8.0117292702198029e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 0,
+                  "quality": 1.2800000190734863e+01,
+                  "le": 8.7029963731765747e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 2.5571428298950195e+01,
+                  "le": 5.7414941489696503e-02
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 4,
+                  "quality": 1.1142857551574707e+01,
+                  "le": 3.0707446858286858e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 8,
+                  "quality": 2.6461538314819336e+01,
+                  "le": 9.4621592760086060e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 1.0,
+              "norm_class_idx": 1,
+              "splits": [
+                {
+                  "var": 2,
+                  "quality": 1.1199999809265137e+01,
+                  "le": 1.1605060659348965e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        },
+        {
+          "nodes": [
+            {
+              "depth": 0,
+              "value": 2.0,
+              "norm_class_idx": 2,
+              "splits": [
+                {
+                  "var": 8,
+                  "quality": 2.6545454025268555e+01,
+                  "le": 6.8584328889846802e-01
+                }
+              ]
+            },
+            {
+              "depth": 1,
+              "value": 0.0,
+              "norm_class_idx": 0,
+              "splits": [
+                {
+                  "var": 9,
+                  "quality": 8.1428575515747070e+00,
+                  "le": 1.4290826395153999e-02
+                }
+              ]
+            },
+            {
+              "depth": 2,
+              "value": 0.0,
+              "norm_class_idx": 0
+            },
+            {
+              "depth": 2,
+              "value": 1.0,
+              "norm_class_idx": 1
+            },
+            {
+              "depth": 1,
+              "value": 2.0,
+              "norm_class_idx": 2
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "pathClasses": [
+    {
+      "name": "Ignore*",
+      "colorRGB": -4934476
+    },
+    {
+      "name": "Negative",
+      "colorRGB": -9408287
+    },
+    {
+      "name": "Positive",
+      "colorRGB": -8342656
+    }
+  ],
+  "requestProbabilityEstimate": false,
+  "filter": "DETECTIONS_ALL",
+  "timestamp": 1592629069275
+}

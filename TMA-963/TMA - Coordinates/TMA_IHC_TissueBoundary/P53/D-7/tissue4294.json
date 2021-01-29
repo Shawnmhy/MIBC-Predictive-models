@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28104.93, 11916.56],
+        [28101.29, 11919.43],
+        [28102.74, 11922.7],
+        [28107.16, 11922.76],
+        [28108.82, 11919.43],
+        [28108.1, 11917.31],
+        [28104.93, 11916.56]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 6.929776191711426
+      },
+      {
+        "name": "Length µm",
+        "value": 9.920441627502441
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8848447799682617
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.474261999130249
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.8011319637298584
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.20248469710350037
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.19912618398666382
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.15736238658428192
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.2575569450855255
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.026558883488178253
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.008187093771994114
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.011492171324789524
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.029032396152615547
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.030754851177334785
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.014107479713857174
+      }
+    ]
+  }
+}

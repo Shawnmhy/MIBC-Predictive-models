@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27780.23, 11997.54],
+        [27778.45, 12001.45],
+        [27779.98, 12004.26],
+        [27783.76, 12004.3],
+        [27784.14, 12001.45],
+        [27783.09, 11998.46],
+        [27780.23, 11997.54]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 5.834345817565918
+      },
+      {
+        "name": "Length µm",
+        "value": 9.22729206085205
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8610997796058655
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.463704824447632
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.43754506111145
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.23104019463062286
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.23013442754745483
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.1223154217004776
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.30823636054992676
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.047507140785455704
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.002600574167445302
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.002479815622791648
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.026908235624432564
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.035646822303533554
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.015599430538713932
+      }
+    ]
+  }
+}

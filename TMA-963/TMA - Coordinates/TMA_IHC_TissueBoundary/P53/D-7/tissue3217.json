@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28072.42, 11848.92],
+        [28070.05, 11850.41],
+        [28070.75, 11856.02],
+        [28074.88, 11856.69],
+        [28076.57, 11852.47],
+        [28076.1, 11850.48],
+        [28072.42, 11848.92]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.717409133911133
+      },
+      {
+        "name": "Length µm",
+        "value": 10.543905258178711
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8723251223564148
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.7170426845550537
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.821582317352295
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.2813117504119873
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.3012528717517853
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.14822383224964142
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.35351303219795227
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.05362742766737938
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.0025123734958469868
+      },
+      {
+        "name": "DAB: Median",
+        "value": 2.712233108468354E-4
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.028589971363544464
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.015309068374335766
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.010056675411760807
+      }
+    ]
+  }
+}

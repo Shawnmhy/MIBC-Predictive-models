@@ -1,0 +1,96 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [26991.41, 11485.3],
+        [26988, 11486.94],
+        [26987.24, 11490.94],
+        [26989.15, 11492.59],
+        [26993.52, 11492.37],
+        [26995.5, 11489.22],
+        [26995.37, 11486.57],
+        [26991.41, 11485.3]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 9.519869804382324
+      },
+      {
+        "name": "Length µm",
+        "value": 11.479778289794922
+      },
+      {
+        "name": "Circularity",
+        "value": 0.9077659249305725
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.189877986907959
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 3.2541186809539795
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.34906005859375
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.3492356538772583
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.08225752413272858
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.5910946726799011
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.14577221870422363
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.00998843926936388
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.012452788650989532
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.070329450070858
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.029789403080940247
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.01964414119720459
+      }
+    ]
+  }
+}

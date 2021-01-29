@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [26388.68, 11896.18],
+        [26387.15, 11900.07],
+        [26388.82, 11902.3],
+        [26393.13, 11902.83],
+        [26394.76, 11899.34],
+        [26392.52, 11896.76],
+        [26388.68, 11896.18]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.336760997772217
+      },
+      {
+        "name": "Length µm",
+        "value": 10.197357177734375
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8866229057312012
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.632777452468872
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.7377092838287354
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.2521064579486847
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.25599655508995056
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.13618576526641846
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.3667007088661194
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.06042870134115219
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.0353471115231514
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.03865984082221985
+      },
+      {
+        "name": "DAB: Min",
+        "value": 0.0047194878570735455
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.0732034295797348
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.019372975453734398
+      }
+    ]
+  }
+}

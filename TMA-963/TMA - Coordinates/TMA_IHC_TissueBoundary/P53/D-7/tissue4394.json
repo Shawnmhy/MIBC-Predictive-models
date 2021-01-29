@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28041.42, 11525.58],
+        [28040.3, 11527.59],
+        [28041.21, 11531.18],
+        [28045.4, 11532.99],
+        [28046.33, 11529.39],
+        [28044.5, 11525.75],
+        [28041.42, 11525.58]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 6.370041847229004
+      },
+      {
+        "name": "Length µm",
+        "value": 9.736490249633789
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8443981409072876
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.819124221801758
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.4416797161102295
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.19818298518657684
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.19284839928150177
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.1154920756816864
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.282897412776947
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.043330900371074677
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.002560549648478627
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.006800561212003231
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.025456013157963753
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.0215230043977499
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.011779816821217537
+      }
+    ]
+  }
+}

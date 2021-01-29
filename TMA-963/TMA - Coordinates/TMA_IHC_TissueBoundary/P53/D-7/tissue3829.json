@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [26032.41, 11603.65],
+        [26028.17, 11606.39],
+        [26028.97, 11609.91],
+        [26036.44, 11609.68],
+        [26038.46, 11606.39],
+        [26037.41, 11604.28],
+        [26032.41, 11603.65]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 10.142806053161621
+      },
+      {
+        "name": "Length µm",
+        "value": 12.43486499786377
+      },
+      {
+        "name": "Circularity",
+        "value": 0.82430100440979
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.713292598724365
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.7923481464385986
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.25112223625183105
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.2530342936515808
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.1542249321937561
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.33502331376075745
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.04898829385638237
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.0029787898529320955
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.0035689142532646656
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.031212227419018745
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.020170580595731735
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.011041403748095036
+      }
+    ]
+  }
+}

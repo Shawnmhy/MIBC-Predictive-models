@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27040.92, 11610.94],
+        [27043.88, 11612.65],
+        [27041.45, 11616.11],
+        [27048.52, 11617.57],
+        [27050.71, 11614.76],
+        [27048.45, 11612.08],
+        [27040.92, 11610.94]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.716185092926025
+      },
+      {
+        "name": "Length µm",
+        "value": 13.416815757751465
+      },
+      {
+        "name": "Circularity",
+        "value": 0.5386585593223572
+      },
+      {
+        "name": "Solidity",
+        "value": 0.8387218117713928
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.778773307800293
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.4346165657043457
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.3051736056804657
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.31286531686782837
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.1296643763780594
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.42124441266059875
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.0877232551574707
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.002721580443903804
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.004716809373348951
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.04346854239702225
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.03484834358096123
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.01503074076026678
+      }
+    ]
+  }
+}

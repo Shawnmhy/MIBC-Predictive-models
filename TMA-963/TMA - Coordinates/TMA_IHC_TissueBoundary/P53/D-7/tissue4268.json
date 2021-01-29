@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27585.52, 12134.27],
+        [27580.05, 12139.16],
+        [27581.12, 12141.7],
+        [27587.82, 12139.43],
+        [27589.33, 12136.7],
+        [27589.02, 12134.68],
+        [27585.52, 12134.27]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 8.238458633422852
+      },
+      {
+        "name": "Length µm",
+        "value": 11.738449096679688
+      },
+      {
+        "name": "Circularity",
+        "value": 0.7513363361358643
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.798552989959717
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.442837715148926
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.25061166286468506
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.25738707184791565
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.15979763865470886
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.3274414837360382
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.04638778418302536
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.01485496573150158
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.013804564252495766
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.03912779688835144
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.01450098492205143
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.014876913279294968
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28093.63, 11623.35],
+        [28089.46, 11623.36],
+        [28086.59, 11626.48],
+        [28087.24, 11630.78],
+        [28094.3, 11630.61],
+        [28095.49, 11626.48],
+        [28093.63, 11623.35]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 11.138113975524902
+      },
+      {
+        "name": "Length µm",
+        "value": 12.603324890136719
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8811529278755188
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.459819316864014
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 3.3434252738952637
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.23388215899467468
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.23779839277267456
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.13037623465061188
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.284407377243042
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.030461648479104042
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.004073214251548052
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.005015935283154249
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.025385379791259766
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.03482982888817787
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.014372225850820541
+      }
+    ]
+  }
+}

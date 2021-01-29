@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28238.3, 11804.42],
+        [28236.38, 11806.41],
+        [28236.81, 11811.51],
+        [28241.83, 11812.93],
+        [28243.35, 11808.94],
+        [28241.8, 11805.04],
+        [28238.3, 11804.42]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 9.075462341308594
+      },
+      {
+        "name": "Length µm",
+        "value": 11.404908180236816
+      },
+      {
+        "name": "Circularity",
+        "value": 0.876788854598999
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.182923316955566
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 3.056293487548828
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.24427497386932373
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.24961884319782257
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.15000329911708832
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.33115363121032715
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.04364673048257828
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.005097277462482452
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.004708742722868919
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.03877665475010872
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.02200455218553543
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.011411265470087528
+      }
+    ]
+  }
+}

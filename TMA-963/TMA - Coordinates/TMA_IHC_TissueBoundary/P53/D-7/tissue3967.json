@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28113.23, 11937.31],
+        [28109.23, 11939.59],
+        [28109.31, 11944.65],
+        [28112.53, 11945.71],
+        [28114.05, 11944.82],
+        [28114.96, 11941.19],
+        [28113.23, 11937.31]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.232865333557129
+      },
+      {
+        "name": "Length µm",
+        "value": 10.35554027557373
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8475683331489563
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.885050058364868
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.5898149013519287
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.21921832859516144
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.22368063032627106
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.12807303667068481
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.2637104094028473
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.028665712103247643
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.0034112122375518084
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.003001417499035597
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.012983662076294422
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.022647297009825706
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.007816219702363014
+      }
+    ]
+  }
+}

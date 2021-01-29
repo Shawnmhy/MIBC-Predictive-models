@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28009.44, 11612.37],
+        [28005.15, 11612.97],
+        [28004.04, 11615.52],
+        [28005.85, 11617.74],
+        [28009.97, 11617.94],
+        [28011.33, 11614.76],
+        [28009.44, 11612.37]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 6.192694664001465
+      },
+      {
+        "name": "Length µm",
+        "value": 9.357767105102539
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8886792659759521
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.3284971714019775
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.5146284103393555
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.21674296259880066
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.22228281199932098
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.14837107062339783
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.2854505777359009
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.034411508589982986
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -0.010326550342142582
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.006444419268518686
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.03737969323992729
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.0055749607272446156
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.010853265412151814
+      }
+    ]
+  }
+}

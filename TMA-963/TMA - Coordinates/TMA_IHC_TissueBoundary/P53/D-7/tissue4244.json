@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28191.1, 11575.23],
+        [28188.42, 11575.79],
+        [28187.8, 11577.94],
+        [28189.65, 11580.9],
+        [28194.83, 11581.13],
+        [28195.89, 11577.94],
+        [28191.1, 11575.23]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.012873649597168
+      },
+      {
+        "name": "Length µm",
+        "value": 10.222270965576172
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8433563113212585
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.7907962799072266
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.564366102218628
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.16224880516529083
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.16739289462566376
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.08015824854373932
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.25038647651672363
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.04608805477619171
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 1.5292050375137478E-4
+      },
+      {
+        "name": "DAB: Median",
+        "value": 6.105958018451929E-4
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.02138221077620983
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.020473098382353783
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.01111017819494009
+      }
+    ]
+  }
+}

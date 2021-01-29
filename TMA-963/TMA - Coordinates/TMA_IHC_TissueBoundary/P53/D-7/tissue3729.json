@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [25649.72, 11374.32],
+        [25648.44, 11377.86],
+        [25648.71, 11382.77],
+        [25652.25, 11384.39],
+        [25654.66, 11380.41],
+        [25652.25, 11374.36],
+        [25649.72, 11374.32]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 9.102773666381836
+      },
+      {
+        "name": "Length µm",
+        "value": 11.92581558227539
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8042803406715393
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.713815689086914
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.7560977935791016
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.2180747538805008
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.22208146750926971
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.13503487408161163
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.32865238189697266
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.06009882315993309
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.0029437043704092503
+      },
+      {
+        "name": "DAB: Median",
+        "value": 6.586735835298896E-4
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.01912778429687023
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.0376618392765522
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.014322759583592415
+      }
+    ]
+  }
+}

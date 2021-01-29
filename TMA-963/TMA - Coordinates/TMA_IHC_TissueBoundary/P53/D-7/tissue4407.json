@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [25865.17, 11521.1],
+        [25861.15, 11524.37],
+        [25863.12, 11527.44],
+        [25866.9, 11526.96],
+        [25868.82, 11524.37],
+        [25868.36, 11522.24],
+        [25865.17, 11521.1]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 6.572846412658691
+      },
+      {
+        "name": "Length µm",
+        "value": 9.730485916137695
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8723571300506592
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.4920551776885986
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.5594098567962646
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.24752409756183624
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.2542972266674042
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.13606075942516327
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.3067243695259094
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.041679952293634415
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.0025548473931849003
+      },
+      {
+        "name": "DAB: Median",
+        "value": 5.060139810666442E-4
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.029470963403582573
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.024154363200068474
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.011238491162657738
+      }
+    ]
+  }
+}

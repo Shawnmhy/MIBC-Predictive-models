@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27828.73, 12012.88],
+        [27825.1, 12014.1],
+        [27824.2, 12016.52],
+        [27826.15, 12020.37],
+        [27831.43, 12020.56],
+        [27832.23, 12016.52],
+        [27828.73, 12012.88]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 9.205133438110352
+      },
+      {
+        "name": "Length µm",
+        "value": 11.431356430053711
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8852060437202454
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.106123924255371
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 3.200901508331299
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.33850446343421936
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.34665170311927795
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.18377172946929932
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.4252193868160248
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.06615952402353287
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.02258136309683323
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.021371709182858467
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.027347208932042122
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.084734246134758
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.02697175182402134
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [26070.32, 12248.58],
+        [26068.12, 12252.2],
+        [26070.83, 12255.06],
+        [26074.7, 12255.13],
+        [26075.8, 12252.2],
+        [26075.37, 12250.44],
+        [26070.32, 12248.58]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 7.13848876953125
+      },
+      {
+        "name": "Length µm",
+        "value": 10.155511856079102
+      },
+      {
+        "name": "Circularity",
+        "value": 0.869786262512207
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.6062850952148438
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.6803483963012695
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.21377485990524292
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.22149379551410675
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.11809778213500977
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.27319371700286865
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.040613606572151184
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.008488314226269722
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.009026076644659042
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.015696756541728973
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.03345915675163269
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.01018181350082159
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27122.21, 11181.38],
+        [27117.21, 11182.16],
+        [27116.28, 11184.22],
+        [27117.86, 11187.88],
+        [27121.63, 11187.43],
+        [27123.17, 11184.22],
+        [27122.21, 11181.38]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 6.779138565063477
+      },
+      {
+        "name": "Length µm",
+        "value": 9.835827827453613
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8805672526359558
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 3.551931142807007
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 2.6735146045684814
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.29816707968711853
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.29716554284095764
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.09676685184240341
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.509207546710968
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.10879747569561005
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.0024757881183177233
+      },
+      {
+        "name": "DAB: Median",
+        "value": 2.2365828044712543E-4
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.045205485075712204
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.04187314584851265
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.020236486569046974
+      }
+    ]
+  }
+}

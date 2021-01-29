@@ -1,0 +1,96 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [28256.81, 11189.98],
+        [28255.18, 11191.99],
+        [28255.85, 11198.38],
+        [28258.59, 11199.62],
+        [28260.57, 11199.03],
+        [28262.29, 11194.27],
+        [28260.29, 11190.17],
+        [28256.81, 11189.98]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 10.664011001586914
+      },
+      {
+        "name": "Length µm",
+        "value": 12.347138404846191
+      },
+      {
+        "name": "Circularity",
+        "value": 0.8790180087089539
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 4.484537601470947
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 3.102773666381836
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.00352174392901361
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.002363781211897731
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": -2.6826761313714087E-4
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.009001102298498154
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.00229818606749177
+      },
+      {
+        "name": "DAB: Mean",
+        "value": -9.419057168997824E-4
+      },
+      {
+        "name": "DAB: Median",
+        "value": -0.0011131197679787874
+      },
+      {
+        "name": "DAB: Min",
+        "value": -0.002043896820396185
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.003908928949385881
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.001442854292690754
+      }
+    ]
+  }
+}

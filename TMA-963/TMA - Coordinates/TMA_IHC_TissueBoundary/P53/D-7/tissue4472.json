@@ -1,0 +1,98 @@
+{
+  "type": "Feature",
+  "id": "PathDetectionObject",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [27567.59, 12773.74],
+        [27564.65, 12774.09],
+        [27561.82, 12778.79],
+        [27562.38, 12783.34],
+        [27564.64, 12785.59],
+        [27567.59, 12786.13],
+        [27574.09, 12785.52],
+        [27575.36, 12781.18],
+        [27570.07, 12775.17],
+        [27567.59, 12773.74]
+      ]
+    ]
+  },
+  "properties": {
+    "classification": {
+      "parentClass": {
+        "name": "Negative",
+        "colorRGB": -9408287
+      },
+      "name": "Positive",
+      "colorRGB": -11250520
+    },
+    "isLocked": false,
+    "measurements": [
+      {
+        "name": "Area µm^2",
+        "value": 25.034683227539062
+      },
+      {
+        "name": "Length µm",
+        "value": 18.676868438720703
+      },
+      {
+        "name": "Circularity",
+        "value": 0.9018698930740356
+      },
+      {
+        "name": "Solidity",
+        "value": 1.0
+      },
+      {
+        "name": "Max diameter µm",
+        "value": 6.740753173828125
+      },
+      {
+        "name": "Min diameter µm",
+        "value": 5.0711846351623535
+      },
+      {
+        "name": "Hematoxylin: Mean",
+        "value": 0.19057410955429077
+      },
+      {
+        "name": "Hematoxylin: Median",
+        "value": 0.19642274081707
+      },
+      {
+        "name": "Hematoxylin: Min",
+        "value": 0.1223154217004776
+      },
+      {
+        "name": "Hematoxylin: Max",
+        "value": 0.23539839684963226
+      },
+      {
+        "name": "Hematoxylin: Std.Dev.",
+        "value": 0.027468524873256683
+      },
+      {
+        "name": "DAB: Mean",
+        "value": 0.020440848544239998
+      },
+      {
+        "name": "DAB: Median",
+        "value": 0.021372947841882706
+      },
+      {
+        "name": "DAB: Min",
+        "value": -1.1134818487334996E-4
+      },
+      {
+        "name": "DAB: Max",
+        "value": 0.03629179298877716
+      },
+      {
+        "name": "DAB: Std.Dev.",
+        "value": 0.007547782734036446
+      }
+    ]
+  }
+}
