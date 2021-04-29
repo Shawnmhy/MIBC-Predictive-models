@@ -27,7 +27,7 @@ allFeatures_forModel[is.na(allFeatures_forModel)] <- 0
 #write.csv(allFeatures_forModel, 'allFeatures_forModel.csv')
 
 
-#------------- Image contexture feature ------------# allFeatures_forModel.contexture is right after this
+#------------- Image contexture feature ------------# 
 allFeatures_forModel.contexture <- allFeatures_forModel[, 1:1011]
 allFeatures_forModel.contexture$Outcome <- allFeatures_forModel$Outcome
 
@@ -72,87 +72,6 @@ allFeatures_forModel.cellClass$Outcome <- allFeatures_forModel$Outcome
 
 
 
-#----------------------- Baseline, svm, test ----------------------#
-
-
-# cross validation using bootstrapping
-
-boostrap_length = 100 # define boostap length
-
-
-for (id in 1: length(Partitioned.data)){
-  
-  Partitioned.data <- createDataPartition(allFeatures.base$Outcome, times = boostrap_length, p = 0.2, list = T)
-  inner.cv <- matrix(nrow = 0, ncol = 5)
-  
-  
-  #id <- 5
-  x = Partitioned.data[[id]]
-  
-  # in the next two lines we will separate the Training set into it's 10 pieces
-  training_fold = allFeatures.base[-x,] # training fold =  training set minus (-) it's sub test fold
-  test_fold = allFeatures.base[x,] # here we describe the test fold individually
-  
-  
-  #inner.cv <- matrix(nrow = 0, ncol = 3)
-  for(gamma in 10^(-10:3)){
-    for(cost in 1:100){
-      
-      
-      # inner cross validation:
-      
-      classifier = svm(formula = Outcome ~ .,
-                       data = training_fold,
-                       type = 'C-classification',
-                       kernel = 'radial',
-                       gamma = gamma,
-                       cost = cost, probability = TRUE)      
-      # next step in the loop, we calculate the predictions and cm and we equate the accuracy
-      # note we are training on training_fold and testing its accuracy on the test_fold
-      y_pred = predict(classifier, newdata = test_fold[,-ncol(test_fold)],  probability = TRUE)
-      
-      
-      AUC.metric <- AUC(y_pred = y_pred, y_true = test_fold$Outcome)
-      
-      F1.metric <- F1_Score(y_pred = y_pred, y_true = test_fold$Outcome, positive = '1')
-      
-      
-      cm = table(pred = y_pred, true=test_fold$Outcome)
-      accuracy = sum(diag(cm))/sum(cm)
-      
-      #inner.cv <- rbind(inner.cv, cbind(gamma, cost, accuracy, AUC.metric))
-      inner.cv <- rbind(inner.cv, cbind(gamma, cost, accuracy, AUC.metric, F1.metric))
-      
-    }
-  }
-  optimization.folds.ACC <- rbind(optimization.folds.ACC, inner.cv[which.max(inner.cv[,3]),c(1,2,3)])
-  optimization.folds.AUC <- rbind(optimization.folds.AUC, inner.cv[which.max(inner.cv[,4]),c(1,2,4)])
-  optimization.folds.F1 <- rbind(optimization.folds.F1, inner.cv[which.max(inner.cv[,5]),c(1,2,5)])
-  #print(inner.cv[which.max(inner.cv[,3]),])
-  #print(Accuracy.folds)
-  
-  iterations <- iterations + 1
-  
-  print('------------------')
-  print(paste('finish iteration ', iterations, sep = ''))
-}
-
-
-#mRMR.accuracy <- rbind(mRMR.accuracy, cbind(feature_count, mean(optimization.folds[,3])))
-print(mean(optimization.folds.ACC[,3]))
-print(mean(optimization.folds.AUC[,3]))
-print(mean(optimization.folds.F1[,3]))
-
-optimization.folds <- data.frame(optimization.folds.ACC) 
-optimization.folds$AUC <- optimization.folds.AUC[,3]
-optimization.folds$F1 <- optimization.folds.F1[,3]
-
-write.csv(optimization.folds, 'base_mRMR_SVM.csv')
-
-#print(feature_count)
-
-
-
 #----------------------- Shape + Clustering +  Image texture + Cell Classification + Classifier ----------------------#
 
 allFeatures_forModel.ShapeClusTextureClass <- cbind(allFeatures_forModel.shape, allFeatures_forModel.cluster, allFeatures_forModel.cellClass, allFeatures_forModel.contexture)
@@ -174,7 +93,6 @@ allFeatures_forModel.2345 <- cbind(allFeatures_forModel.spatstat, allFeatures_fo
 
 
 
-#----------------------- OBTAIN 5 fold accuracy ----------------------#
 
 mRMR.accuracy <- matrix(nrow = 0, ncol = 2)
 
@@ -304,7 +222,7 @@ for (id in 1: length(Partitioned.data)){
 
 inner.cv <- data.frame(inner.cv)
 
-# which to check?
+# which to check? 3: ACC, 4: AUC, 5: F1 score
 id <- 3
 #mean(as.numeric(as.character(inner.cv[inner.cv$type == 'C-classification' & inner.cv$kernel == 'linear', id])))
 mean(as.numeric(as.character(inner.cv[inner.cv$type == 'C-classification' & inner.cv$kernel == 'radial', id])))
@@ -357,90 +275,4 @@ count_
 # top 30 features
 top30Feature <- count_[order(count_$Freq, decreasing = TRUE), ]
 top30Feature <- as.character(top30Feature[1:30,1])
-#----------------------- OBTAIN 5 fold accuracy ----------------------#
-
-mRMR.accuracy <- matrix(nrow = 0, ncol = 2)
-
-
-#for(feature_count in 3:60){
-
-allFeatures_12345 <- allFeatures_forModel[,-1]
-
-Data.matrix <- allFeatures_for
-
-
-# machine learning
-
-optimization.folds<- matrix(nrow = 0, ncol = 3)
-
-#optimized.feature <- list()    
-
-iterations <- 0
-optimized.feature <- list()
-
-
-
-# cross validation using bootstrapping
-
-boostrap_length = 100 # define boostap length
-
-Partitioned.data <- createDataPartition(Data.matrix$Outcome, times = boostrap_length, p = 0.33, list = T)
-
-for (id in 1: length(Partitioned.data)){
-  
-  #id <- 6
-  inner.cv <- matrix(nrow = 0, ncol = 3)
-  
-  x = Partitioned.data[[id]]
-  
-  # in the next two lines we will separate the Training set into it's 10 pieces
-  training_fold = Data.matrix[-x,] # training fold =  training set minus (-) it's sub test fold
-  
-  test_fold = Data.matrix[x,] # here we describe the test fold individually
-  
-  
-  
-  for(gamma in 10^(-10:3)){
-    for(cost in 1:100){
-      classifier = svm(formula = Outcome ~ .,
-                       data = training_fold,
-                       type = 'C-classification',
-                       kernel = 'radial',
-                       gamma = gamma,
-                       cost = cost, probability = TRUE)      
-      # next step in the loop, we calculate the predictions and cm and we equate the accuracy
-      y_pred = predict(classifier, newdata = test_fold,  probability = TRUE)
-      
-      
-      
-      AUC.metric <- AUC(y_pred = y_pred, y_true = test_fold$Outcome)
-      
-      
-      cm = table(pred = y_pred, true=test_fold$Outcome)
-      accuracy = sum(diag(cm))/sum(cm)
-      
-      inner.cv <- rbind(inner.cv, cbind(gamma, cost, accuracy, AUC.metric))
-      
-    }
-  }
-  
-  optimization.folds.ACC <- rbind(optimization.folds.ACC, inner.cv[which.max(inner.cv[,3]),c(1,2,3)])
-  optimization.folds.AUC <- rbind(optimization.folds.AUC, inner.cv[which.max(inner.cv[,4]),c(1,2,4)])
-  optimization.folds.F1 <- rbind(optimization.folds.F1, inner.cv[which.max(inner.cv[,5]),c(1,2,5)])  #print(Accuracy.folds)
-  #print(Accuracy.folds)
-  
-  iterations <- iterations + 1
-  
-  print('------------------')
-  print(paste('finish iteration ', iterations, sep = ''))
-}
-
-#mRMR.accuracy <- rbind(mRMR.accuracy, cbind(feature_count, mean(optimization.folds[,3])))
-print(mean(optimization.folds[,3]))
-write.csv(optimization.folds, 'baseline_mRMR.csv')
-
-#print(feature_count)
-
-
-
 
