@@ -17,49 +17,92 @@ library(rgeos)
 library(igraph)
 library(stringr)
 library(concaveman)
+setwd("~/Desktop/TMA_963")
+source('FeatureFunction.R')
 
-setwd("~/Desktop/TMA-coordinates")
-source('~/Desktop/TMA_963/FeatureFunction.R')
 ###################################################
 # STEP 1: rescale H&E points #
 ###################################################
+HE_ptsFile <- read.csv('./Cell.label.csv')
+
+metaFile <- read.csv('./TMA - Coordinates/IHC_Core_Stat.csv')
+metaFile$Image <- str_split_fixed(metaFile$Image, '_', n = 6)[,4]
+
+#----------------------------------#
+for(letter in LETTERS[1:12]){
+  for(num in 1:10){
+    
+    #coreName <- 'A-7'
+    # core name     
+    coreName <- paste(letter, '-', num, sep = '')
+    
+    # create folder
+    
+    # subset DF, convert to pixel unit
+    ptsFile <- HE_ptsFile[HE_ptsFile$TMA.core == coreName,] 
+    
+    if(nrow(ptsFile) != 0){
+      # get ref points
+      
+      ref_x <- metaFile[metaFile$Name == coreName & metaFile$Image == 'HE',]$Centroid.X.µm/0.454 - 2908/2 # unit: pixel
+      ref_y <- metaFile[metaFile$Name == coreName & metaFile$Image == 'HE',]$Centroid.Y.µm/0.454 - 2908/2 # unit: pixel
+      
+      # get the rescaled points
+      rescale_x <- ptsFile$Centroid.X.µm/0.454 - ref_x
+      rescale_y <- ptsFile$Centroid.Y.µm/0.454 - ref_y  
+      rescale_pts <- cbind(rescale_x, rescale_y)        # save file to Folder
+      writeMat(con = paste("./TMA - Coordinates/HE_Rescaled_Coords/", coreName,'/HE', '.mat', sep = ''), coords_toReg = rescale_pts)
+    }
+  }
+}
+
 
 #-------- read meta file to get the core boundary -------------#
 
-
+setwd("~/Desktop/TMA_963")
+source('./FeatureFunction.R')
 # read area file
 
 TMA_allArea <- read.csv('./TMA_allArea.csv', row.names = 1)[,1:2]
 
 # read qualified cores
-qualifiedCore <- read.csv('~/Desktop/TMA-1042-Annotations/qualified_TMAcores.csv')['x']
+qualifiedCore <- read.csv('./TMA-963-Annotations/qualified_TMAcores.csv')['x']
 coreClusStat <- matrix(nrow = 0, ncol = 15)
 
 # read reference contour
 for(core in as.character(qualifiedCore$x)){
   
-  #core <- 'L-13'
-  Coords_shapeDes <- read.csv(paste('./cellFeatures/', core,'/cellFeatures.csv', sep = ''), row.names = 1)[,c(1,3,4,11)]
-  Coords_shapeDes$cell_ID <- c(1:nrow(Coords_shapeDes))
+  #core <- 'A-7'
+
   # reference
-  Region_HE <- readRDS(paste('~/Desktop/TMA - coregistration//TMA_SpatStat_Rescaled/', core, '/HE.rds', sep = ''))
+  Region_HE <- readRDS(paste('./TMA - Coordinates/TMA_SpatStat_Rescaled/', core, '/HE.rds', sep = ''))
   Region_HE <- lapply(Region_HE,FUN= function(x) x*0.454)
   
   # pts to ppp
-  pts <- data.frame(readMat(paste('./HE_Rescaled_Coords/', core, '/HE.mat', sep = '')))*0.454
+  pts <- data.frame(readMat(paste('./TMA - Coordinates/HE_Rescaled_Coords/', core, '/HE.mat', sep = '')))*0.454
+  
   colnames(pts) <- c('x', 'y')
   
   
+  # cell shape file
+  Coords_shapeDes <- read.csv(paste('./cellFeatures/', core,'/cellFeatures.csv', sep = ''), row.names = 1)[,c(1,3,4,11)]
+  Coords_shapeDes$cell_ID <- c(1:nrow(Coords_shapeDes))
+
+
   
   # replace the coordinates to rescaled coordinates
   Coords_shapeDes$Centroid.X.µm <- pts$x
   Coords_shapeDes$Centroid.Y.µm <- pts$y
+  #ggplot(data = pts) +
+  #geom_point(aes(x, y), shape = 21, size = 4, fill = '#ff8080') +
+  #geom_polygon(aes(Reg))
+  # theme_bw()
   
   #
   #---------------------------------------#
   # clustering using delaunay triangulation
   
-  r <- tri.mesh(pts$x, pts$y)
+  r <- tri.mesh(Coords_shapeDes$Centroid.X.µm, Coords_shapeDes$Centroid.Y.µm)
   
   
   # get the delaunay triangulation basic stats
@@ -127,7 +170,6 @@ for(core in as.character(qualifiedCore$x)){
   
   
   
-  
   Area <- matrix(nrow = 0, ncol = 1)
   posDensity <- matrix(nrow = 0, ncol = 1)
   Clus_density <- matrix(nrow = 0, ncol = 1)
@@ -135,6 +177,7 @@ for(core in as.character(qualifiedCore$x)){
   cluster_posListAll <- matrix(nrow = 0, ncol = 5)
   
   while(list_id <= length(comp_list)){
+    #list_id <- 1
     cluster_posList <- matrix(nrow = 0, ncol = 4)
     if(length(comp_list[[list_id]]) >= 30){
       print(list_id)
@@ -148,18 +191,18 @@ for(core in as.character(qualifiedCore$x)){
         
         cluster_posList <- rbind(cluster_posList, cbind(item_x, item_y, clus_id, item))
       }
-      cluster_posList <- cluster_posList[complete.cases(cluster_posList),]
+      cluster_posList <- data.frame(cluster_posList[complete.cases(cluster_posList),])
       colnames(cluster_posList) <- c('Centroid.X.mm', 'Centroid.Y.mm', 'cluster', 'cell_ID')
       
-      # merge
+
       cluster_posList <- merge(cluster_posList, Coords_shapeDes, by= 'cell_ID')
       
-      
+      cluster_posList$Centroid.X.mm <- as.numeric(as.character(cluster_posList$Centroid.X.mm))
+      cluster_posList$Centroid.Y.mm <- as.numeric(as.character(cluster_posList$Centroid.Y.mm))
       # get the cluster size
-      concaveHull <- concaveman(data.matrix(cluster_posList[,1:2]), concavity = 2)
+      concaveHull <- concaveman(data.matrix(cluster_posList[,2:3]), concavity = 2)
       area <- gArea(SpatialPolygons(list(Polygons(list(Polygon(concaveHull[,1:2])),1))))
       Area <- rbind(Area, area)
-      
       
       
       # get the density
@@ -173,13 +216,13 @@ for(core in as.character(qualifiedCore$x)){
       list_id <- list_id + 1
       
       cluster_posListAll <- rbind(cluster_posListAll, cluster_posList)
-      
     } else {
       list_id <- list_id + 1
     }
   }
   
 
+  
   if(length(cluster_posListAll) != 0){
     # remove redundant columns
     cluster_posListAll <- cluster_posListAll[, c(2,3,4,7)]
@@ -190,14 +233,6 @@ for(core in as.character(qualifiedCore$x)){
     
     COrE_feature.names <- colnames(COrE_features)
     
-    
-    clus_mean <- mean(posDensity) # average nucleus density per cluster
-    clus_max <- max(posDensity) # average nucleus density per cluster
-    clus_min <- mean(posDensity) # average nucleus density per cluster
-    clus_CoV <- sd(posDensity)/clus_mean # average nucleus density per cluster
-    
-    
-    
     # triangulation stats
     triStat <- rbind(triStat, cbind(Num_tri, mean(tri_perimeter), max(tri_perimeter), min(tri_perimeter), sd(tri_perimeter)/mean(tri_perimeter),
                                     mean(tri_area), max(tri_area), min(tri_area), sd(tri_area)/mean(tri_area)))
@@ -205,30 +240,32 @@ for(core in as.character(qualifiedCore$x)){
     # get the cluster density
     tissueArea <- TMA_allArea[TMA_allArea$TMA.core == core,2]
     
-    
+    clus_mean <- mean(posDensity) # average nucleus density per cluster
+    clus_max <- max(posDensity) # average nucleus density per cluster
+    clus_min <- mean(posDensity) # average nucleus density per cluster
+    clus_CoV <- sd(posDensity)/clus_mean # average nucleus density per cluster
     
     # core level
-    this.core <- cbind(core, clus_mean, clus_max, clus_min, clus_CoV, (c_id - 1)/tissueArea, triStat, COrE_features)
+    this.core <- cbind(core, clus_mean, clus_max, clus_min, clus_CoV, (clus_id - 1)/tissueArea, triStat, COrE_features)
     colnames(this.core) <- c('TMA.core', 'Density of nucleus_mean', 'Density of nucleus_max',  'Density of nucleus_min',  'Density of nucleus_CoV', 'Density of clusters', 'Number of triangles',
-                             'Perimeter of triangle_mean', 'Perimeter of triangle_max', 'Perimeter of triangle_min', 'Perimeter of triangle_CoV', 'Area of triangle_mean',
-                             'Area of triangle_max', 'Area of triangle_min', 'Area of triangle_CoV', COrE_feature.names)
+                                'Perimeter of triangle_mean', 'Perimeter of triangle_max', 'Perimeter of triangle_min', 'Perimeter of triangle_CoV', 'Area of triangle_mean',
+                                'Area of triangle_max', 'Area of triangle_min', 'Area of triangle_CoV', COrE_feature.names)
     
     coreClusStat <- rbind(coreClusStat, this.core)
     
   } else {
     
-    NA_dat <- data.frame(cbind(core, t(rep(NA, 53))))
+    NA_dat <- data.frame(cbind(core, t(rep(NA, 27))))
     colnames(NA_dat) <- c('TMA.core', 'Density of nucleus_mean', 'Density of nucleus_max',  'Density of nucleus_min',  'Density of nucleus_CoV', 'Density of clusters', 'Number of triangles',
                           'Perimeter of triangle_mean', 'Perimeter of triangle_max', 'Perimeter of triangle_min', 'Perimeter of triangle_CoV', 'Area of triangle_mean',
                           'Area of triangle_max', 'Area of triangle_min', 'Area of triangle_CoV', COrE_feature.names)
     coreClusStat <- rbind(coreClusStat, NA_dat)
   }
   
-} 
+}
 write.csv(coreClusStat, 'clusterStat.csv')
 
 
 
-# heatmap
 
-write.csv(co_occurrence, 'co_occurrence.csv')
+
